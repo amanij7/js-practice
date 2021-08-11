@@ -1,6 +1,6 @@
 var button = document.getElementById("enter");
 var input = document.querySelector("input");
-var deleteButton = document.getElementsByClassName("delete");
+var deleteButton = document.querySelector(".delete");
 
 function createElement() {
         var li = document.createElement("li");
@@ -37,7 +37,6 @@ deleteButton.addEventListener("click", (e) => {
     if (e.target.className === "delete"){
 		e.target.parentElement.remove();
 	}
-
 });
 
 
